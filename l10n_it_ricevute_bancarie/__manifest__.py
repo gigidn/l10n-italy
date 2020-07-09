@@ -9,7 +9,7 @@
 
 {
     'name': "ITA - Ricevute bancarie",
-    'version': "12.0.1.3.1",
+    'version': "12.0.1.3.3",
     'author': "Odoo Community Association (OCA)",
     'category': 'Localization/Italy',
     'summary': 'Ricevute bancarie',
@@ -18,7 +18,6 @@
     'license': "AGPL-3",
     'depends': [
         'account',
-        'account_group_menu',
         'l10n_it_base',
         'base_iban',
         'account_due_list'],
