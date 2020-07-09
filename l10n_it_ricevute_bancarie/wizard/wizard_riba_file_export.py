@@ -235,8 +235,9 @@ class RibaFileExport(models.TransientModel):
             debitor_address = line.partner_id
             debitor_street = debitor_address.street or ''
             debitor_zip = debitor_address.zip or ''
-            if debit_bank.acc_number:
-                debit_iban = debit_bank.acc_number.replace(" ", "")
+            debit_iban = debit_bank.acc_number.replace(" ", "") \
+                if debit_bank.acc_number else None
+            if debit_iban and len(debit_iban) == 27:
                 debit_abi = debit_iban[5:10]
                 debit_cab = debit_iban[10:15]
             else:
