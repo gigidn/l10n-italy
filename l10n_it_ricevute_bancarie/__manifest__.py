@@ -19,9 +19,8 @@
     'depends': [
         'account',
         'account_group_menu',
-        'l10n_it_fiscalcode',
+        'l10n_it_base',
         'base_iban',
-        #'l10n_it_abicab',
         'account_due_list'],
     'data': [
         "data/riba_sequence.xml",

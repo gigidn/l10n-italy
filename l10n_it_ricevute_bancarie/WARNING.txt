@@ -1,0 +1,2 @@
+This is a special version of the same OCA module that add only compatibility whit the OBA Framework.
+Do Not use it outside the oba-framework, on standard Odoo use the OCA version instead.
